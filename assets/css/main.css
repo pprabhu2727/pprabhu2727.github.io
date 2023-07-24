@@ -2622,6 +2622,8 @@ input, select, textarea {
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
+			
+			
 		}
 
 			.image.fit:first-child {
@@ -2629,7 +2631,7 @@ input, select, textarea {
 			}
 
 			.image.fit img {
-				width: 100%;
+				width: 100%; 
 			}
 
 		.image.main {
@@ -2803,7 +2805,11 @@ input, select, textarea {
 	ul.icons {
 		cursor: default;
 		list-style: none;
-		padding-left: 0;
+		/* padding-left: 0; */
+		display: flex;
+		margin-right: 0px;
+		margin-left: auto;
+
 	}
 
 		ul.icons li {
