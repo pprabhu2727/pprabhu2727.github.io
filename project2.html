@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Prasad's Portfolio - Project 2</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Back to Portfolio</a>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>
+									3D Video Game</h1>
+									<p>This video game was completed in a team of two over five months. The game is a zombie survival game where the player's goal is to survive for as long as possible while eliminating all enemies. This game was built off of a bare-bones game engine known as TAGE, so most of the features in the game were built from scratch using Java. </p>
+								</header>
+								<div class="image main"><img src="images/project2big.png" alt="The client portal of the Lilac Ventures Website" /></div>
+								<h3>Features Implemented</h3>
+								<ul>
+									<li><i>Input Handling</i></li>
+										<ul>
+											<li>Based on specific inputs, different actions would take place within the game. I created an input handler to link an input key from a controller, keyboard, or mouse with an in-game action. </li>											
+										</ul>
+									<li><i>Models and Animation</i></li>
+										<ul>
+											<li>All game models, animations, and textures were handmade and created in Blender with the help of skeletal rigging and texture mapping tools. </li>
+										</ul>
+									<li><i>Networked Multiplayer</i></li>
+										<ul>
+											<li>The game supports multiplayer for up to two players. The networking between the client and server was done using Java by having the client and server send UDP packets to each other whenever an action occurred in-game. The client and server also had a custom protocol to handle incoming packets and send them to a game controller to perform synchronized actions across all clients.</li>
+										</ul>
+									<li><i>Scripting</i></li>
+										<ul>
+											<li>Scripting was implemented to allow for a separate script file to initialize some game parameters. The program would read from the javascript file and initialize the correct parameters in the Java program to make the game-balancing process easier. </li>
+										</ul>
+									<li><i>AI and NPC</i></li>
+										<ul>
+											<li>Rangers and Monsters are non-playable characters (NPCs) that follow predetermined behavior patterns. The Ranger, for instance, is programmed with a behavior tree that instructs it to patrol the arena until a player approaches. Once a player is detected, the Ranger's behavior changes: it becomes aggressive, enlarges in size, emits an attack sound, and attacks the player. The Ranger follows a circular path around the arena to perform its patrolling behavior. This is achieved by converting its Cartesian coordinates to polar coordinates, calculating its path based on the polar coordinates, and then converting back to Cartesian coordinates. This process results in the Ranger rotating around the arena in a circular motion.</li>
+										</ul>	
+									<li><i>Physics</i></li>
+										<ul>
+											<li>The ranger's attack implements physics and uses the JBullet physics engine. The ranger's grenade attacks will bounce off other grenades, the floor, and the avatar. When the game detects the collision between a grenade and the player, the player's health will be decreased.</li>
+										</ul>
+									<li><i>Skybox, Terrain, Lighting, Camera Controller, Hierarchical Scenegraph, and 3D Sound</i></li>
+								</ul>
+								
+								<h3>Skills Acquired</h3>
+								<p>Skills include game engine architecture; screen management and rendering control; geometric models; algorithms and data structures for spatial partitioning, occlusion, and collision detection; real-time interactive 3D graphics and animation techniques; behavioral control for autonomous characters; simulation of physical phenomena; sound and music in games; optimization techniques; multi-player games and networking; game development tools and environments.</p>
+
+								<ul class="actions special">
+									<li><a href="https://github.com/JeffreyT72/Apocalypse-Arena-Survival-Game" class="button" target="_blank">Project 2 GitHub</a></li>
+									<li><a href="https://youtu.be/tfC8Cms61Yc" class="button" target="_blank">Game Demo</a></li>
+								</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">	
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">prasadyprabhu@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/prasad-prabhu-7081a1264/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/pprabhu2727" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+					<div><br></div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
