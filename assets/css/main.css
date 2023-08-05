@@ -2634,10 +2634,17 @@ input, select, textarea {
 				width: 100%; 
 			}
 
+		.mainImageParent {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 		.image.main {
 			display: block;
 			margin: 4rem 0;
-			width: 100%;
+			width: 50%;
+			height: auto;
+			object-fit: contain;
 		}
 
 			.image.main:first-child {
