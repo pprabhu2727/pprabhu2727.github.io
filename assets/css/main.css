@@ -2639,12 +2639,35 @@ input, select, textarea {
 			justify-content: center;
 			align-items: center;
 		}
-		.image.main {
+
+		.image.profile {
 			display: block;
 			margin: 4rem 0;
 			width: 50%;
 			height: auto;
-			object-fit: contain;
+			object-fit:contain;
+			margin-top: 0;
+		}
+			.image.profile:first-child {
+				margin-top: 0;
+			}
+
+			.image.profile img {
+				width: 100%;
+			}
+
+		@media screen and (max-width: 736px) {
+
+			.image.profile {
+				margin: 2rem 0;
+			}
+
+		}
+
+		.image.main {
+			display: block;
+			margin: 4rem 0;
+			width: 100%;
 		}
 
 			.image.main:first-child {
